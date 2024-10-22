@@ -1,4 +1,5 @@
-```your_project/
+```
+pacsxwics-flask-intro/
 ├── app.py
 ├── templates/
 │   └── index.html
@@ -6,4 +7,5 @@
     ├── css/
     │   └── styles.css
     └── images/
-        └── logo.png```
+        └── logo.png
+```
