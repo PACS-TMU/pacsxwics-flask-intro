@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Home{% endblock %}</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!--rest of the page-->
+    {% block content %}{% endblock %}
+
+    <!--footer-->
+    <footer>
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
