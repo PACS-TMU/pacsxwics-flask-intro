@@ -1,10 +1,27 @@
 {% extends 'base.html' %} {% block title %}Home{% endblock %} {% block content%}
 
-<h1>Welcome to the Home Page</h1>
 <!--Hero Section-->
-<section>Hero Section</section>
+<div id="hero-section" class="first-section">
+    <section id="hero-grid">
+        <img
+            src="/static/images/hero_img.jpg"
+            alt="Personal Headshot"
+            class="image"
+        />
+        <div id="hero-content">
+            <h2>YOUR NAME</h2>
+        </div>
+    </section>
+</div>
+
 <!--About Section-->
-<section>About Section</section>
+<div id="about-section">
+    <section>About Section</section>
+</div>
+
 <!--Projects Section-->
-<section>Projects Section</section>
+<div id="project-section" class="last-section">
+    <section>Projects Section</section>
+</div>
+
 {% endblock %}

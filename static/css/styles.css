@@ -1,0 +1,83 @@
+/* General CSS */
+:root {
+    --background: #f0f0f0;
+    --foreground: #111111;
+}
+
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+}
+
+.first-section {
+    padding-top: 4rem;
+}
+
+/* Might be unnecessary */
+.last-section {
+    padding-bottom: 2rem;
+}
+
+/* Navbar CSS */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 4rem;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-vl {
+    font-weight: bold;
+}
+
+.navlist a {
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+.navlist a:hover {
+    color: blueviolet;
+    transition: ease-in-out 300ms;
+}
+
+hr {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    width: 100vw;
+    height: 2px;
+}
+
+/* Hero CSS */
+#hero-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+
+
+/* Footer CSS */
+footer {
+    display: flex;
+    width: 100vw;
+    height: 4rem;
+    justify-content: center;
+    justify-items: center;
+}
