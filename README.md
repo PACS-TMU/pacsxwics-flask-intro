@@ -19,7 +19,7 @@ cd pacsxwics-flask-intro
 ```
 ### Run on localhost
 ```
-python app.py
+flask run
 ```
 
 ## Project Structure
