@@ -1,74 +1,86 @@
 /* General CSS */
 :root {
-    --background: #f0f0f0;
+    --background: #fafafa;
     --foreground: #111111;
+    --links: #2980dd;
 }
 
 html {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--background);
     color: var(--foreground);
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     padding: 0;
-    max-width: 1440px;
-}
-
-.first-section {
-    padding-top: 4rem;
-}
-
-/* Might be unnecessary */
-.last-section {
-    padding-bottom: 2rem;
 }
 
 /* Navbar CSS */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
+#navbar {
+    width: 100%;
+    border-bottom: 1px solid #000;     /* Line under the navbar */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    /* Adjusted to space items accordingly */
+    align-items: center;
     height: 4rem;
+    padding: 0 1rem;                   /* Added padding to ensure items are not touching the edges */
 }
 
 .navlist {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    justify-items: center;
+    align-items: center;
+    justify-content: space-around; /* Change to space-around for even spacing */
     list-style: none;
+    height: 100%;
     padding: 0;
+    margin: 0;
+    flex-grow: 2; /* Allow the ul to grow and take available space */
 }
 
-.nav-vl {
-    font-weight: bold;
+.nav-item {
+    padding: 0 20px;
+    font-size: 1.3rem;
+    flex-grow: 1; /* Allow each nav item to grow and take available space */
+    text-align: center; /* Center the text inside each nav item */
 }
 
-.navlist a {
-    color: var(--foreground);
+.nav-edge {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    flex-grow: 0.5; /* Allow the edge divs to grow and take available space */
+}
+
+.nav-divider {
+    height: 100%;
+    width: 2px;
+    background-color: #000; /* Vertical line color */
+}
+
+.nav-item a {
     text-decoration: none;
+    color: #000;
 }
 
-.navlist a:hover {
-    color: blueviolet;
-    transition: ease-in-out 300ms;
-}
-
-hr {
-    position: fixed;
-    top: 3rem;
-    left: 0;
-    width: 100vw;
-    height: 2px;
+.nav-item a:hover {
+    color: var(--links);
+    transition: ease-in-out 0.2s;
 }
 
 /* Hero CSS */
 #hero-grid {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    z-index: 20;
 }
 
 

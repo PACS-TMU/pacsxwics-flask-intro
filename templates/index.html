@@ -1,15 +1,17 @@
-{% extends 'base.html' %} {% block title %}Home{% endblock %} {% block content%}
+{% extends 'base.html' %} {% block title %}My Portfolio - Home{% endblock %} {% block content%}
 
 <!--Hero Section-->
-<div id="hero-section" class="first-section">
+<div id="hero-section">
   <section id="hero-grid">
-    <img
-      src="/static/images/hero_img.jpeg"
-      alt="Personal Headshot"
-      class="image"
-    />
+    <img src="/static/images/hero_img.jpeg" alt="Personal Headshot" class="image" />
     <div id="hero-content">
       <h2>YOUR NAME</h2>
+      <p>COMPUTER SCIENCE STUDENT</p>
+      <div id="hero-buttons">
+        <a href="https://linkedin.com/company/pacstmu" class="hero-button" target="_blank">LINKEDIN</a>
+        <a href="https://github.com/pacs-tmu" class="hero-button" target="_blank">GITHUB</a>
+        <a href="mailto:pacs@usstm.ca" class="hero-button" target="_blank">EMAIL</a>
+      </div>
     </div>
   </section>
 </div>
@@ -20,7 +22,7 @@
 </div>
 
 <!--Projects Section-->
-<div id="project-section" class="last-section">
+<div id="project-section">
   <section>Projects Section</section>
 </div>
 

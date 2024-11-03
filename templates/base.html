@@ -4,58 +4,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% block title %}Home{% endblock %}</title>
+  <title>{% block title %}My Porfolio - Home{% endblock %}</title>
   <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 
 <body>
   <!--Navbar-->
-  <nav>
+  <nav id="navbar">
+    <div class="nav-edge">
+      <p class="nav-item"><a href="/">YOUR NAME</a></p>
+      <p class="nav-divider"></p>
+    </div>
     <ul class="navlist">
-      <li class="nav-vl">
-        |
-      </li>
-      <li>
-        YOUR NAME
-      </li>
-      <li class="nav-vl">
-        |
-      </li>
-      <li>
-        <a href="/">
-          HOME
-        </a>
-      </li>
-      <li class="nav-vl">
-        |
-      </li>
-      <li>
-        <a href="">
-          ABOUT
-        </a>
-      </li>
-      <li class="nav-vl">
-        |
-      </li>
-      <li>
-        <a href="">
-          PROJECTS
-        </a>
-      </li>
-      <li class="nav-vl">
-        |
-      </li>
-      <li>
-        <a href="/contact">
-          CONTACT
-        </a>
-      </li>
-      <li class="nav-vl">
-        |
-      </li>
+      <li class="nav-item"><a href="/#hero-section">SKILLS</a></li>
+      <li class="nav-item"><a href="/#about-section">ABOUT</a></li>
+      <li class="nav-item"><a href="/#project-section">PROJECTS</a></li>
     </ul>
+    <div class="nav-edge">
+      <p class="nav-divider"></p>
+      <p class="nav-item"><a href="/contact">CONTACT</a></p>
+    </div>
   </nav>
-  <hr />
 
   <!--rest of the page-->
   {% block content %}{% endblock %}
