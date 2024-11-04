@@ -1,95 +1,144 @@
+/* fonts integration */
+@font-face {
+  font-family: "Inconsolata-Bold";
+  src: url("/static/fonts/Inconsolata_Condensed-Bold.ttf");
+}
+@font-face {
+  font-family: "Inconsolata-Medium";
+  src: url("/static/fonts/Inconsolata_Condensed-Medium.ttf");
+}
+@font-face {
+  font-family: "Inconsolata-ExtraBold";
+  src: url("/static/fonts/Inconsolata_Condensed-ExtraBold.ttf");
+}
 /* General CSS */
 :root {
-    --background: #fafafa;
-    --foreground: #111111;
-    --links: #2980dd;
+  --background: #fafafa;
+  --foreground: #111111;
+  --links: #2980dd;
 }
 
 html {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--background);
-    color: var(--foreground);
-    scroll-behavior: smooth;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navbar CSS */
 #navbar {
-    width: 100%;
-    border-bottom: 1px solid #000;     /* Line under the navbar */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;    /* Adjusted to space items accordingly */
-    align-items: center;
-    height: 4rem;
-    padding: 0 1rem;                   /* Added padding to ensure items are not touching the edges */
+  width: 100%;
+  border-bottom: 1px solid #000; /* Line under the navbar */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Adjusted to space items accordingly */
+  align-items: center;
+  height: 4rem;
+  padding: 0 1rem; /* Added padding to ensure items are not touching the edges */
 }
 
 .navlist {
-    display: flex;
-    align-items: center;
-    justify-content: space-around; /* Change to space-around for even spacing */
-    list-style: none;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    flex-grow: 2; /* Allow the ul to grow and take available space */
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Change to space-around for even spacing */
+  list-style: none;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  flex-grow: 2; /* Allow the ul to grow and take available space */
 }
 
 .nav-item {
-    padding: 0 20px;
-    font-size: 1.3rem;
-    flex-grow: 1; /* Allow each nav item to grow and take available space */
-    text-align: center; /* Center the text inside each nav item */
+  padding: 0 20px;
+  font-size: 1.3rem;
+  flex-grow: 1; /* Allow each nav item to grow and take available space */
+  text-align: center; /* Center the text inside each nav item */
 }
 
 .nav-edge {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
-    flex-grow: 0.5; /* Allow the edge divs to grow and take available space */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  flex-grow: 0.5; /* Allow the edge divs to grow and take available space */
 }
 
 .nav-divider {
-    height: 100%;
-    width: 2px;
-    background-color: #000; /* Vertical line color */
+  height: 100%;
+  width: 2px;
+  background-color: #000; /* Vertical line color */
 }
 
 .nav-item a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 .nav-item a:hover {
-    color: var(--links);
-    transition: ease-in-out 0.2s;
+  color: var(--links);
+  transition: ease-in-out 0.2s;
 }
 
 /* Hero CSS */
 #hero-grid {
-    display: grid;
-    grid-template-columns: 45% 55%;
+  display: grid;
+  grid-template-columns: 45% 55%;
 }
 
 .image {
-    width: 100%;
-    height: auto;
-    z-index: 20;
+  width: 100%;
+  height: auto;
+  z-index: 20;
+  border: #000 1px solid;
 }
-
-
-
+#hero-content {
+  font-family: "Inconsolata-Bold";
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 40px;
+}
+h2 {
+  font-size: 100px;
+  margin: 0;
+}
+p {
+  font-size: 25px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+#hero-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+/* Skills CSS */
+#skills-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  border: #000 1px solid;
+}
+#skills-content {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
 /* Footer CSS */
 footer {
-    display: flex;
-    width: 100vw;
-    height: 4rem;
-    justify-content: center;
-    justify-items: center;
+  display: flex;
+  width: 100vw;
+  height: 4rem;
+  justify-content: center;
+  justify-items: center;
 }

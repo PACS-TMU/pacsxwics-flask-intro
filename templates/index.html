@@ -1,21 +1,68 @@
-{% extends 'base.html' %} {% block title %}My Portfolio - Home{% endblock %} {% block content%}
+{% extends 'base.html' %} {% block title %}My Portfolio - Home{% endblock %} {%
+block content%}
 
 <!--Hero Section-->
 <div id="hero-section">
   <section id="hero-grid">
-    <img src="/static/images/hero_img.jpeg" alt="Personal Headshot" class="image" />
+    <img
+      src="/static/images/hero_img.jpeg"
+      alt="Personal Headshot"
+      class="image"
+    />
     <div id="hero-content">
       <h2>YOUR NAME</h2>
       <p>COMPUTER SCIENCE STUDENT</p>
       <div id="hero-buttons">
-        <a href="https://linkedin.com/company/pacstmu" class="hero-button" target="_blank">LINKEDIN</a>
-        <a href="https://github.com/pacs-tmu" class="hero-button" target="_blank">GITHUB</a>
-        <a href="mailto:pacs@usstm.ca" class="hero-button" target="_blank">EMAIL</a>
+        <!-- LINKEDIN -->
+        <a
+          href="https://linkedin.com/company/pacstmu"
+          class="hero-button"
+          target="_blank"
+        >
+          <img
+            src="/static/images/linkedin_icon.png"
+            alt="LinkedIn Icon"
+            class="icon"
+          />
+        </a>
+        <!-- GITHUB -->
+        <a
+          href="https://github.com/pacs-tmu"
+          class="hero-button"
+          target="_blank"
+        >
+          <img
+            src="/static/images/github_icon.png"
+            alt="Github Icon"
+            class="icon"
+          />
+        </a>
+        <!-- EMAIL -->
+        <a href="mailto:pacs@usstm.ca" class="hero-button" target="_blank">
+          <img
+            src="/static/images/email_icon.png"
+            alt="Email Icon"
+            class="icon"
+          />
+        </a>
       </div>
     </div>
   </section>
 </div>
 
+<!-- Skills Section -->
+<div id="skills-section">
+  <section id="skills-grid">
+    <div id="skills-content">
+      <img src="/static/images/python_icon.png" alt="Python Icon" />
+      <img src="/static/images/java_icon.png" alt="Java Icon" />
+      <img src="/static/images/html_icon.png" alt="HTML Icon" />
+      <img src="/static/images/css_icon.png" alt="CSS Icon" />
+      <img src="/static/images/javascript_icon.png" alt="JavaScript Icon" />
+    </div>
+    <img src="/static/images/city_img.jpg" alt="City Image" class="image" />
+  </section>
+</div>
 <!--About Section-->
 <div id="about-section">
   <section>About Section</section>
@@ -23,7 +70,7 @@
 
 <!--Projects Section-->
 <div id="project-section">
-  <section>Projects Section</section>
+  <section></section>
 </div>
 
 {% endblock %}
