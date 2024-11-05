@@ -58,6 +58,8 @@ body {
   font-size: 1.3rem;
   flex-grow: 1; /* Allow each nav item to grow and take available space */
   text-align: center; /* Center the text inside each nav item */
+  font-size: 1.5rem;
+  font-family: "Inconsolata-Medium";
 }
 
 .nav-edge {
@@ -82,6 +84,11 @@ body {
 .nav-item a:hover {
   color: var(--links);
   transition: ease-in-out 0.2s;
+}
+
+#nav-name {
+  font-family: "Inconsolata-Bold";
+  font-size: 1.5rem;
 }
 
 /* Hero CSS */
