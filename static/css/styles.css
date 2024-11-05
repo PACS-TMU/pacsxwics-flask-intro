@@ -142,3 +142,57 @@ footer {
   justify-content: center;
   justify-items: center;
 }
+
+/* Contact Page CSS */
+#contact-content {
+  font-family: "Inconsolata-Bold";
+  width: 90%;
+  padding: 5% 0 5% 10%;
+}
+
+#contactform {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 25px; /* Space between input boxes */
+  padding-top: 5%;
+}
+
+/* Stack labels and input boxes ontop of each other */
+#contactform div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 20px;
+}
+
+#contactform input[type="text"],
+#contactform input[type="email"],
+textarea {
+  font-family: "Inconsolata-Bold"; /* Change font for user input */
+  font-size: 20px;
+  height:2.5rem;
+}
+
+textarea {
+  height: 300px;
+}
+
+#contactform input[type="submit"] {
+  font-family: "Inconsolata-Bold";
+  font-size:18px;
+  width:30%;
+  padding: 10px 20px;
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+#contactform #firstname-lastname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#contactform #firstname-lastname div {
+  width:40%;
+}
