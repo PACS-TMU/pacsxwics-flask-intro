@@ -3,19 +3,23 @@
   font-family: "Inconsolata-Bold";
   src: url("/static/fonts/Inconsolata_Condensed-Bold.ttf");
 }
+
 @font-face {
   font-family: "Inconsolata-Medium";
   src: url("/static/fonts/Inconsolata_Condensed-Medium.ttf");
 }
+
 @font-face {
   font-family: "Inconsolata-ExtraBold";
   src: url("/static/fonts/Inconsolata_Condensed-ExtraBold.ttf");
 }
+
 /* General CSS */
 :root {
   --background: #fafafa;
   --foreground: #111111;
   --links: #2980dd;
+  --footer: #2b2b2b;
 }
 
 html {
@@ -23,6 +27,7 @@ html {
   background-color: var(--background);
   color: var(--foreground);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -33,31 +38,41 @@ body {
 /* Navbar CSS */
 #navbar {
   width: 100%;
-  border-bottom: 1px solid #000; /* Line under the navbar */
+  border-bottom: 1px solid #000;
+  /* Line under the navbar */
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Adjusted to space items accordingly */
+  justify-content: space-between;
+  /* Adjusted to space items accordingly */
   align-items: center;
   height: 4rem;
-  padding: 0 1rem; /* Added padding to ensure items are not touching the edges */
+  padding: 0 1rem;
+  /* Added padding to ensure items are not touching the edges */
 }
 
 .navlist {
   display: flex;
   align-items: center;
-  justify-content: space-around; /* Change to space-around for even spacing */
+  justify-content: space-around;
+  /* Change to space-around for even spacing */
   list-style: none;
   height: 100%;
   padding: 0;
   margin: 0;
-  flex-grow: 2; /* Allow the ul to grow and take available space */
+  flex-grow: 2;
+  /* Allow the ul to grow and take available space */
 }
 
 .nav-item {
   padding: 0 20px;
   font-size: 1.3rem;
-  flex-grow: 1; /* Allow each nav item to grow and take available space */
-  text-align: center; /* Center the text inside each nav item */
+  flex-grow: 1;
+  /* Allow each nav item to grow and take available space */
+  text-align: center;
+  /* Center the text inside each nav item */
+  font-size: 1.5rem;
+  font-family: "Inconsolata-Medium";
+  letter-spacing: 0.1rem;
 }
 
 .nav-edge {
@@ -65,13 +80,15 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
-  flex-grow: 0.5; /* Allow the edge divs to grow and take available space */
+  flex-grow: 0.5;
+  /* Allow the edge divs to grow and take available space */
 }
 
 .nav-divider {
   height: 100%;
   width: 2px;
-  background-color: #000; /* Vertical line color */
+  background-color: #000;
+  /* Vertical line color */
 }
 
 .nav-item a {
@@ -82,6 +99,10 @@ body {
 .nav-item a:hover {
   color: var(--links);
   transition: ease-in-out 0.2s;
+}
+
+#nav-name {
+  font-family: "Inconsolata-Bold";
 }
 
 /* Hero CSS */
@@ -96,6 +117,7 @@ body {
   z-index: 20;
   border: #000 1px solid;
 }
+
 #hero-content {
   font-family: "Inconsolata-Bold";
   display: flex;
@@ -104,28 +126,34 @@ body {
   justify-content: center;
   padding-right: 40px;
 }
+
 h2 {
   font-size: 100px;
   margin: 0;
 }
+
 p {
   font-size: 25px;
 }
+
 .icon {
   width: 30px;
   height: 30px;
 }
+
 #hero-buttons {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+
 /* Skills CSS */
 #skills-grid {
   display: grid;
   grid-template-columns: 75% 25%;
   border: #000 1px solid;
 }
+
 #skills-content {
   display: flex;
   gap: 30px;
@@ -134,14 +162,35 @@ p {
   justify-content: center;
   padding: 0 40px;
 }
+
+/* About CSS */
+#about-section {
+  font-family: "Inconsolata-Bold";
+  margin: 100px 200px;
+}
+
 /* Footer CSS */
 footer {
-  display: flex;
-  width: 100vw;
-  height: 4rem;
+  width: 100%;
+  height: 12rem;
+  padding: 0;
+  margin: 0;
+  background-color: var(--footer);
+  color: var(--background);
+  font-family: "Inconsolata-bold";
+  display: grid;
+  grid-template-columns: 50% 50%;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
 }
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Contact Page CSS */
 #contact-content {
@@ -196,3 +245,12 @@ textarea {
 #contactform #firstname-lastname div {
   width:40%;
 }
+
+footer p {
+  font-size: 1.3rem;
+}
+
+footer img {
+  filter: invert(1);
+}
+
