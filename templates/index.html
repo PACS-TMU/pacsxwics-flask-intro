@@ -73,7 +73,25 @@ block content%}
 
 <!--Projects Section-->
 <div id="project-section">
-  <section></section>
+  <section>
+    <h2>PROJECTS</h2>
+
+    <!--For loop to render all projects from projects list from app.py-->
+    <div id="project-grid">
+      {% for project in projects %}
+
+      <div class="project">
+        <img src={{project["image"]}} alt="Project Image" class="project-image"/>
+        <div class="project-content">
+          <p class="project-title">{{project["title"]}}</p>
+          <p class="project-description">{{project["description"]}}</p>
+          <a href={{project["github"]}} class="project-github-button" target="_blank">VIEW GITHUB</a>
+        </div>
+      </div> 
+
+      {% endfor %}
+    </div>
+  </section>
 </div>
 
 {% endblock %}
