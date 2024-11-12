@@ -27,12 +27,30 @@ flask run
 pacsxwics-flask-intro/
 ├── app.py
 ├── templates/
-│   └── index.html
+│   ├── base.html
+|   └── index.html
 └── static/
     ├── css/
     │   └── styles.css
+    ├── fonts/
+    │   ├── Inconsolata_Condensed-Bold.ttf
+    │   ├── Inconsolata_Condensed-ExtaBold.ttf
+    │   └── Inconsolata_Condensed-Medium.ttf
     └── images/
-        └── logo.png
+        ├── city_img.jpg
+        ├── hero_img.jpeg
+        ├── css_icon.png
+        ├── email_icon.png
+        ├── github_icon.png
+        ├── html_icon.png
+        ├── java_icon.png
+        ├── javascript_icon.png
+        ├── linkedin_icon.png
+        ├── python_icon.png
+        ├── project_1_img.jpg
+        ├── project_2_img.jpg
+        ├── project_3_img.jpg
+        └── project_4_img.jpg
 ```
 ## Project Homepage Design
 <img width="1512" alt="portfolio-website-design" src="https://github.com/user-attachments/assets/e565db28-0d46-48d4-8ab2-ccaea3b3b64e">
