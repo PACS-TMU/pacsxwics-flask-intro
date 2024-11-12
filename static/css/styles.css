@@ -141,6 +141,11 @@ p {
   height: 30px;
 }
 
+.icon:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.2s;
+}
+
 #hero-buttons {
   display: flex;
   flex-direction: row;
@@ -177,20 +182,29 @@ footer {
   margin: 0;
   background-color: var(--footer);
   color: var(--background);
-  font-family: "Inconsolata-bold";
-  display: grid;
-  grid-template-columns: 50% 50%;
-  justify-content: center;
+  font-family: "Inconsolata-Bold";
+  display: flex;
   align-items: center;
+}
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 100px;
 }
 
 .footer-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-
+.footer-item-left {
+  align-items: flex-start;
+}
+.footer-item-right {
+  align-items: flex-end;
+}
 
 /* Contact Page CSS */
 #contact-content {
@@ -220,7 +234,7 @@ footer {
 textarea {
   font-family: "Inconsolata-Bold"; /* Change font for user input */
   font-size: 20px;
-  height:2.5rem;
+  height: 2.5rem;
 }
 
 textarea {
@@ -229,8 +243,8 @@ textarea {
 
 #contactform input[type="submit"] {
   font-family: "Inconsolata-Bold";
-  font-size:18px;
-  width:30%;
+  font-size: 18px;
+  width: 30%;
   padding: 10px 20px;
   background-color: var(--foreground);
   color: var(--background);
@@ -243,7 +257,7 @@ textarea {
 }
 
 #contactform #firstname-lastname div {
-  width:40%;
+  width: 40%;
 }
 
 footer p {
@@ -292,13 +306,12 @@ footer img {
 }
 
 .project-github-button {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #2b2b2b;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  text-decoration: none; 
+  text-decoration: none;
   margin-top: 50px;
 }
-

@@ -1,57 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}My Porfolio - Home{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% block title %}My Porfolio - Home{% endblock %}</title>
-  <link rel="stylesheet" href="/static/css/styles.css">
-</head>
-
-<body>
-  <!--Navbar-->
-  <nav id="navbar">
-    <div class="nav-edge">
-      <p class="nav-item" id="nav-name"><a href="/">YOUR NAME</a></p>
-      <p class="nav-divider"></p>
-    </div>
-    <ul class="navlist">
-      <li class="nav-item"><a href="/#hero-section">SKILLS</a></li>
-      <li class="nav-item"><a href="/#about-section">ABOUT</a></li>
-      <li class="nav-item"><a href="/#project-section">PROJECTS</a></li>
-    </ul>
-    <div class="nav-edge">
-      <p class="nav-divider"></p>
-      <p class="nav-item"><a href="/contact">CONTACT</a></p>
-    </div>
-  </nav>
-
-  <!--rest of the page-->
-  {% block content %}{% endblock %}
-
-  <!--footer-->
-  <footer>
-    <div class="footer-item">
-      <p>COMPUTER SCIENCE STUDENT</p>
-      <div id="hero-buttons">
-        <!-- LINKEDIN -->
-        <a href="https://linkedin.com/company/pacstmu" class="hero-button" target="_blank">
-          <img src="/static/images/linkedin_icon.png" alt="LinkedIn Icon" class="icon" />
-        </a>
-        <!-- GITHUB -->
-        <a href="https://github.com/pacs-tmu" class="hero-button" target="_blank">
-          <img src="/static/images/github_icon.png" alt="Github Icon" class="icon" />
-        </a>
-        <!-- EMAIL -->
-        <a href="mailto:pacs@usstm.ca" class="hero-button" target="_blank">
-          <img src="/static/images/email_icon.png" alt="Email Icon" class="icon" />
-        </a>
+  <body>
+    <!--Navbar-->
+    <nav id="navbar">
+      <div class="nav-edge">
+        <p class="nav-item" id="nav-name"><a href="/">YOUR NAME</a></p>
+        <p class="nav-divider"></p>
       </div>
-    </div>
-    <div class="footer-item">
-      <h2>YOUR NAME</h2>
-    </div>
-  </footer>
-</body>
+      <ul class="navlist">
+        <li class="nav-item"><a href="/#hero-section">SKILLS</a></li>
+        <li class="nav-item"><a href="/#about-section">ABOUT</a></li>
+        <li class="nav-item"><a href="/#project-section">PROJECTS</a></li>
+      </ul>
+      <div class="nav-edge">
+        <p class="nav-divider"></p>
+        <p class="nav-item"><a href="/contact">CONTACT</a></p>
+      </div>
+    </nav>
 
+    <!--rest of the page-->
+    {% block content %}{% endblock %}
+
+    <!--footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-item footer-item-left">
+          <p>COMPUTER SCIENCE STUDENT</p>
+          <div id="hero-buttons">
+            <!-- LINKEDIN -->
+            <a
+              href="https://linkedin.com/company/pacstmu"
+              class="hero-button"
+              target="_blank"
+            >
+              <img
+                src="/static/images/linkedin_icon.png"
+                alt="LinkedIn Icon"
+                class="icon"
+              />
+            </a>
+            <!-- GITHUB -->
+            <a
+              href="https://github.com/pacs-tmu"
+              class="hero-button"
+              target="_blank"
+            >
+              <img
+                src="/static/images/github_icon.png"
+                alt="Github Icon"
+                class="icon"
+              />
+            </a>
+            <!-- EMAIL -->
+            <a href="mailto:pacs@usstm.ca" class="hero-button" target="_blank">
+              <img
+                src="/static/images/email_icon.png"
+                alt="Email Icon"
+                class="icon"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer-item footer-item-right">
+          <h2>YOUR NAME</h2>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
