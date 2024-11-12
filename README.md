@@ -35,7 +35,8 @@ pacsxwics-flask-intro/
         └── logo.png
 ```
 ## Project Homepage Design
-<img width="1512" alt="flask-intro-design" src="https://github.com/user-attachments/assets/c7d13969-5239-4168-8eeb-cc4afdabac3c">
+<img width="1512" alt="portfolio-website-design" src="https://github.com/user-attachments/assets/e565db28-0d46-48d4-8ab2-ccaea3b3b64e">
+
 
 ## Project Contact Page Design
 <img width="1512" alt="Contact_Form_Design" src="https://github.com/user-attachments/assets/8141adf1-3be0-4532-bff2-366724ea1ad0">
